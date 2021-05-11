@@ -71,12 +71,12 @@ export default {
             message: '登陆成功',
             type: 'success'
           })
-          await this.$router.push('/home')
         } else {
           this.$message.error('登录失败')
         }
         // 保存token
         window.sessionStorage.setItem('token', res.data.token)
+        await this.$router.push('/home')
       })
     },
     // 重置表单
