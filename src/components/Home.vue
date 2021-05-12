@@ -12,13 +12,14 @@
             active-text-color="#2c2c2c"
             :collapse="isCollapse"
             :collapse-transition="false"
+            :router="true"
           >
             <el-submenu :index="item.id+''" v-for=" item in menusList" :key="item.id">
               <template slot="title">
                 <i :class="iocnsObj[item.id]"></i>
                 <span>{{ item.authName }}</span>
               </template>
-              <el-menu-item :index="sbuItem.id+''" v-for="sbuItem in item.children" :key="sbuItem.id">
+              <el-menu-item :index="sbuItem.path" v-for="sbuItem in item.children" :key="sbuItem.id">
                 <template slot="title">
                   <i class="el-icon-more"></i>
                   <span slot="title">{{ sbuItem.authName }}</span>
@@ -38,7 +39,9 @@
           <el-button type="info" @click="logout">退出登录</el-button>
         </el-header>
         <!--        内容区域-->
-        <el-main>Main</el-main>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
       </el-container>
     </el-container>
 
