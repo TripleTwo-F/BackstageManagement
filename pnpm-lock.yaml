@@ -18,6 +18,7 @@ specifiers:
   eslint-plugin-vue: ^6.2.2
   less: ^3.0.4
   less-loader: ^5.0.0
+  regenerator-runtime: ^0.13.7
   vue: ^2.6.11
   vue-cli-plugin-element: ^1.0.1
   vue-router: ^3.2.0
@@ -27,6 +28,7 @@ dependencies:
   axios: 0.21.1
   core-js: 3.12.1
   element-ui: 2.15.1_vue@2.6.12
+  regenerator-runtime: 0.13.7
   vue: 2.6.12
   vue-router: 3.5.1
 
@@ -7219,7 +7221,6 @@ packages:
 
   /regenerator-runtime/0.13.7:
     resolution: {integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==}
-    dev: true
 
   /regenerator-transform/0.14.5:
     resolution: {integrity: sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==}
